@@ -1,0 +1,316 @@
+<html>
+<head>
+ 
+<title>SEARCH THE BUS</title>
+
+</head>
+<body>
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 8px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #90fc8a;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 2px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color:#a8a497;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: green;
+}
+</style>
+
+<style>
+img {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<img src="plane.png" alt="logo" style="width:15%" height="110">
+</body>
+<br>
+<body style="background-image: url('air2.gif')">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333333;
+    text-align: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:green;
+}
+</style>
+<body>
+
+<ul>
+  <li><a href=home.html /">HOME</a></li>
+  <li><a href='file:///E:/ticke/search.html'" /">SEARCH PLANE</a></li>
+  <li><a href='book.html'" /">BOOKING</a></li>
+  <li><a href='file:///E:/ticke/verify.html'" /">VERIFY PNR</a></li>
+  <li><a href='file:///E:/ticke/time.html'" /">TIME SCHEDULE</a></li>
+  <li><a href='contact.html'" /">CONTACT</a></li>
+</ul>
+</body>
+<marquee behavior="scroll" direction="left" scrollamount="3"><h4 style="color:RED;">PLEASE SELECT WHERE YOU WANT TO GO.</h4></marquee>
+
+<style>
+.center {
+ text-align: center;
+}
+</style>
+</head>
+<body><div class="center">
+ <tr>
+<label for="select one"><b style="color:black"><u><mark>FROM: </label></b> </u></mark>
+  <select id="select one" 
+         name="select one" />
+    <option>USA</option>		
+	<option>DUBAI</option>
+    <option>DHAKA</option>       
+    <option>ITALY</option>
+	<option>FRANCE</option>
+    <option>INDIA </option>
+    <option>ENGLAND</option>
+    <option>AUSTRALIA </option>	
+    <option>NEPAL</option> 
+  
+  </select> 
+</tr>
+</body>
+
+
+<style>
+.center {
+ text-align: center;
+}
+</style>
+</head>
+<body><div class="center">
+ <tr>
+<label for="select one"><b style="color:black"><u><mark>TO:..... </label></b> </u></mark>
+  <select id="select one" 
+         name="select one" />
+      <option>USA</option>    
+  <option>DUBAI</option>
+    <option>DHAKA</option>       
+    <option>ITALY</option>
+  <option>FRANCE</option>
+    <option>INDIA </option>
+    <option>ENGLAND</option>
+    <option>AUSTRALIA </option> 
+    <option>NEPAL</option> 
+  
+  </select> 
+</tr>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.w3-btn {width:150px;}
+</style>
+<body>
+  <br>
+<div>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Singapore Airlines</a></li>
+  <li><a href="#">Qatar Airways</a></li>
+
+  <li><a href="#">ANA All Nippon Airways</a></li>
+  <li><a href="#">Emirates</a></li>
+
+  <li><a href="#">EVA Air</a></li>
+  <li><a href="#">Cathay Pacific Airways</a></li>
+  <li><a href="#">Lufthansa</a></li>
+  <li><a href="#">Hainan Airlines</a></li>
+   <li><a href="#">Garuda Indonesia</a></li>
+  <li><a href="#">Thai Airways</a></li>
+  <li><a href="#">Turkish Airlines</a></li>
+  <li><a href="#">Qantas</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+</div>
+
+
+
+
+
+<style>
+table {
+    font-family: Arial black, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 3px solid yellow;
+    text-align: center;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color:#105413;
+    text-align: center;
+	}
+	
+	tr:nth-child(odd) {
+    background-color: #383a12;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th style="color:yellow" >TIME</th>
+    <th style="color:yellow">AIR COMPANY NAME</th>
+    <th style="color:yellow">STATUS</th>
+    <th style="color:yellow">OPTION</th>
+  </tr>
+  <tr>
+    <td>8.00 AM</td>
+    <td>Singapore Airlines</td>
+    <td>DELUXE AIRPLANE</td>
+	<td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>10.00 AM</td>
+    <td>Qatar Airways</td>
+    <td>DELUXE AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>12.00 AM</td>
+    <td>ANA All Nippon Airways</td>
+    <td>DELUXE AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>2.00 PM</td>
+    <td>Emirates</td>
+    <td>DELUXE AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>5.00 PM</td>
+    <td>EVA Air</td>
+    <td>STANDARD AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>8.00 PM</td>
+    <td>Cathay Pacific Airways</td>
+    <td>STANDARD AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+
+  <tr>
+    <td>5.00 PM</td>
+    <td>Lufthansa</td>
+    <td>STANDARD AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>5.00 PM</td>
+    <td>Hainan Airlines</td>
+    <td>STANDARD AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>5.00 PM</td>
+    <td>Garuda Indonesia</td>
+    <td>EXCULUSIVE AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>5.00 PM</td>
+    <td>Thai Airways</td>
+    <td>EXCULUSIVE AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>5.00 PM</td>
+    <td>Turkish Airlines</td>
+    <td>EXCULUSIVE AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+  <tr>
+    <td>5.00 PM</td>
+    <td>Qantas</td>
+    <td>EXCULUSIVE AIRPLANE</td>
+    <td><a href="book.html">BOOKING SEAT</a></td>
+  </tr>
+ 
+
+</table>
+
+
+</body>
+
+
+
+
+</html>

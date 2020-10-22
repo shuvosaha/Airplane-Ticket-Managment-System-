@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.header{
+	text-align:center;
+}
+
+
+body {
+	margin:0 ;
+	padding:0;
+	
+   	background-image: url("img2.jpg");
+   background-color: #cccccc;
+   background-size : cover;
+   
+}
+
+
+.content{
+
+
+}
+
+.box{
+width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 20px;
+}
+
+
+ul a{
+			color:#61CFD3;
+			text-decoration:none;
+			font-size:20px;
+		}
+		
+		
+		ul a:hover{
+			cursor:pointer;
+			color:#A0138E;
+		}
